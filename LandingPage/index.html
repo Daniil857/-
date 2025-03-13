@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сувеніри з Єгипту</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+         <header>
+            <a href="">
+                <img class="logo" src="img/Logo_Egupt.jpg" alt="">
+            </a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">What's new</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+         </header>
+         <div class="content">
+            <div class="textBox">
+                <h2>Сувеніри з Єгипту,<br><span>які точно варті вашої уваги</span></h2>
+                <p>До вашої уваги запропоновані декілька цікавих сувенірів, які можна придбати у країні пірамід і пустель- Єгипті</p>
+                <a href="Souvenirs/index.html">Детальніше</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/Єгипет.jpg" alt="" class="Egupt">
+            </div>
+         </div>
+         <ul class="thumb">
+            <li><img src="img/Папірус.jpg" onclick="imgSlide('img/pepsi001.png'); changeColor('#0062be')"></li>
+            <li><img src="img/Амулет.jpg" onclick="imgSlide('img/pepsi002.png'); changeColor('#e60c2c')"></li>
+            <li><img src="img/Картуш.jpg" onclick="imgSlide('img/pepsi003.png'); changeColor('#1e1e1e')"></li>
+         </ul>
+         <ul class="sci">
+            <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+         </ul>
+    </section>
+    <script>
+        function imgSlide(anythig){
+            document.querySelector('.pepsi').src = anythig; 
+        }
+        function changeColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color; 
+        }
+    </script>
+</body>
+</html>
